@@ -1,0 +1,125 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(180deg, #ffd6ec, #ffb3df);
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+
+  min-height: 100vh;
+  padding: 30px 15px;
+
+  text-align: center;
+}
+
+/* ===== HEADER ===== */
+.box {
+  width: min(90%, 750px);
+
+  margin: 0 auto 40px;
+  padding: 25px;
+
+  background: #ff66b7;
+  color: white;
+
+  border: 4px solid #111;
+  border-radius: 22px;
+
+  box-shadow: 8px 8px 0 #111;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+/* ===== LINK BUTTONS ===== */
+.links {
+  width: min(90%, 280px);
+  height: 65px;
+
+  margin: 20px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+
+  border: 4px solid #111;
+  border-radius: 18px;
+
+  box-shadow: 6px 6px 0 #111;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* ===== LINK TEXT ===== */
+.links a {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  color: #111;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== HOVER ===== */
+.links:hover {
+  background: #ffe3f2;
+
+  transform: translateY(-4px);
+
+  box-shadow: 9px 9px 0 #111;
+}
+
+/* ===== ACTIVE CLICK EFFECT ===== */
+.links:active {
+  transform: translateY(2px);
+
+  box-shadow: 4px 4px 0 #111;
+}
+
+/* ===== TEXT CARD ===== */
+.word {
+  width: min(90%, 800px);
+
+  margin: 40px auto;
+  padding: 25px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  border: 4px solid #ff66b7;
+  border-radius: 22px;
+
+  box-shadow: 8px 8px 0 palevioletred;
+
+  font-family: "Segoe UI", sans-serif;
+  font-size: clamp(18px, 2.5vw, 26px);
+
+  line-height: 1.8;
+  text-align: left;
+
+  backdrop-filter: blur(6px);
+}

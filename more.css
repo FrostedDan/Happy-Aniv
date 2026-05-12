@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFB3DF;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.button {
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ff4d6d;
+    color: white;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.heart {
+    position: relative;
+
+    width: 350px;
+    height: 350px;
+
+    background: #ff4d6d;
+
+    transform: rotate(-45deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background: #ff4d6d;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -175px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 175px;
+}
+
+/* TEXT INSIDE HEART */
+.heart span {
+    position: relative;
+
+    transform: rotate(45deg) translateY(-35px);
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    z-index: 2;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MORE</title>
+    <link rel="stylesheet" href="more.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+       <div class="button" id="btn">
+        CLICK ME
+    </div>
+
+    <script>
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", function () {
+
+            if (!btn.classList.contains("heart")) {
+
+                btn.classList.add("heart");
+                btn.innerHTML = "<span>I hope you enjoyed/likedd this website i made for you:D i know it ain't much but it took me really long to make this due to the javascript and CSS. Thank you for always making me feel so loved. MWAAA</span>";
+
+            } else {
+
+                btn.classList.remove("heart");
+                btn.innerHTML = "CLICK ME";
+
+            }
+
+        });
+    </script>
+</body>

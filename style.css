@@ -1,0 +1,145 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(180deg, #ffd6ec, #ffb3df);
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+
+  min-height: 100vh;
+  padding: 30px 15px;
+
+  text-align: center;
+}
+
+/* Hide content initially */
+#content {
+  display: none;
+}
+
+/* ===== HEADER BOX ===== */
+.box {
+  width: min(90%, 700px);
+
+  margin: 0 auto 30px;
+  padding: 25px;
+
+  background: #ff66b7;
+
+  border: 4px solid #111;
+  border-radius: 20px;
+
+  box-shadow: 8px 8px 0 #111;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 800;
+  color: white;
+
+  letter-spacing: 1px;
+}
+
+/* ===== HERO SECTION ===== */
+.HERO {
+  width: 180px;
+  height: 60px;
+
+  margin: 20px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: white;
+
+  border: 3px solid #111;
+  border-radius: 14px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  box-shadow: 6px 6px 0 #111;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.HERO:hover {
+  background: #cfefff;
+  transform: translateY(-3px);
+  box-shadow: 8px 8px 0 #111;
+}
+
+/* ===== BUTTONS ===== */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: min(90%, 260px);
+  height: 65px;
+
+  margin: 18px auto;
+
+  background: white;
+  color: #111;
+
+  border: 4px solid #111;
+  border-radius: 16px;
+
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+
+  box-shadow: 6px 6px 0 #111;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.button:hover {
+  background: #ffe3f2;
+  transform: translateY(-4px);
+
+  box-shadow: 9px 9px 0 #111;
+}
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 4px 4px 0 #111;
+}
+
+/* ===== IMAGE ===== */
+.photo {
+  display: block;
+
+  width: min(90%, 500px);
+  margin: 30px auto;
+
+  border: 4px solid #111;
+  border-radius: 18px;
+
+  box-shadow: 8px 8px 0 #111;
+
+  object-fit: cover;
+}
+
+/* ===== OPTIONAL CARD CONTAINER ===== */
+.container {
+  width: min(95%, 900px);
+  margin: auto;
+}
